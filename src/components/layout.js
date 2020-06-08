@@ -4,6 +4,7 @@ import { graphql, Link, StaticQuery } from "gatsby";
 import { HelmetDatoCms } from "gatsby-source-datocms";
 import PropTypes from "prop-types";
 import React, { useState } from "react";
+import Drift from "react-driftjs";
 import "../styles/index.sass";
 
 const TemplateWrapper = ({ children }) => {
@@ -47,6 +48,7 @@ const TemplateWrapper = ({ children }) => {
             favicon={data.datoCmsSite.faviconMetaTags}
             seo={data.datoCmsHome.seoMetaTags}
           />
+          <Drift appId="3zczft5ema7h" />
           <div className="container__sidebar">
             <div className="sidebar">
               <h6 className="sidebar__title">
